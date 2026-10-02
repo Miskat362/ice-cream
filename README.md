@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Ice Cream Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based ice cream sundae builder that fetches flavor data from Firebase Realtime Database and lets users customize their order in real time.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project is a small interactive frontend app for building a custom ice cream sundae. When the app loads, it fetches the available flavors and prices from Firebase and displays them in the builder. Users can add or remove scoops, and the total price updates automatically.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Build a custom ice cream sundae
+- Add and remove scoops
+- Live total price calculation
+- Firebase-powered flavor data
+- Responsive UI
+- CSS Modules for styling
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- React
+- JavaScript
+- CSS Modules
+- Create React App
+- Firebase Realtime Database
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Firebase Integration
 
-### `npm run build`
+The app loads its item list from Firebase using a fetch call.This allows the app to retrieve available flavor data from the Firebase database instead of hardcoding it in the frontend.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+ice-cream/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── body/
+│   │   ├── builder/
+│   │   ├── footer/
+│   │   ├── header/
+│   │   └── ice-cream/
+│   ├── containers/
+│   │   └── iceCreamBuilder/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.jsx
+│   └── index.css
+├── package.json
+├── package-lock.json
+├── README.md
+├── .gitignore
+└── public/
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Make sure you have Node.js and npm installed on your machine.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Run the app locally
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This will start the development server and open the app in the browser at:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+http://localhost:3000
+```
 
-### Code Splitting
+## Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project was bootstrapped with Create React App and enhanced with Firebase data loading to provide a dynamic ice cream ordering experience.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is intended for educational and demo purposes.
