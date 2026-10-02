@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './scoop.module.css';
 
-const Scoop = () => {
+const Scoop = ({ scoop }) => {
   return (
-    <div className={classes.scoop + " " + classes.orange}></div>
+    <div className={classes.scoop + " " + classes[scoop]}></div>
   )
 }
 

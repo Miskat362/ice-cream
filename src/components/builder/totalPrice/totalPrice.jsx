@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './totalPrice.module.css';
 
-const TotalPrice = () => {
+const TotalPrice = ({ price = 0 }) => {
   return (
     <div className={classes.totalPrice}>
         <div>Total Price</div>
-        <div>$0.00</div>
+        <div>{price.toFixed(2)} Tk</div>
     </div>
   )
 }
